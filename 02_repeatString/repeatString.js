@@ -1,4 +1,7 @@
 function repeatString(string, num) {
+    if (num < 0) {
+        return 'ERROR';
+    }
     runningString = "";
     for (let i = 0; i < num; i++) {
         runningString = runningString.concat(string);
